@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        Calculate calculate = new Calculate(5);
+        double result = calculate.Add(3);
+
+        Console.WriteLine(result);
+        Console.ReadKey();
+    }
+}
+
+class Calculate
+{
+    double number;
+
+    public Calculate(int number)
+    {
+        this.number = number;
+    }
+
+    public double Add(int number2)
+    {
+        return number += number2;
+    }
+
+    public double Minus(int number2)
+    {
+        return number -= number2;
+    }
+}
